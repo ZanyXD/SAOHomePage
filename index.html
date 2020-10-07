@@ -1,0 +1,217 @@
+<!doctype html>
+<html><head>
+<title>肥虫汽水摊|首页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8">
+<meta name="description" content="肥虫汽水摊，一个温馨的个人小站，长期更新记录一些学习，生活，社会上的所见所闻。欢迎与我一起探讨，一起进步！">
+<meta name="keywords" content="日志,blog,学习,网页,ZanyXD,linux,CentOS,肥虫汽水摊,群星笔记,zany群星笔记">
+<meta name="Author" Content="EthanZhang，yisenzhang@outlook.com">
+<meta name="360-fullscreen" content="true"/>
+<!--UC浏览器强制全屏-->
+<meta name="full-screen" content="yes"/>
+<meta name="browsermode" content="application">
+<!--QQ浏览器强制全屏-->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-page-mode" content="app">
+<meta name="x5-fullscreen" content="true"/>
+<!-- chrome-->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#48ae4c">
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/animation.css" rel="stylesheet" type="text/css">
+<link href="css/waifu.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://cdn.bootcdn.net/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+<script src="https://cdn.bootcdn.net/ajax/libs/parallax/3.1.0/parallax.min.js"></script> 
+<script type="text/javascript" src="js/index.js"></script> 
+<script type="text/javascript" src="js/time.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet" type="text/css">
+<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/live2d.js"></script> 
+<script src="js/waifu-tips.js"></script> 
+<script type="text/javascript">
+        document.oncontextmenu = function (e) {
+            var e = e || window.event;
+            console.log('尝试屏蔽右键');
+            e.preventDefault();
+            e.returnValue = false;
+            return false;
+        };
+ 
+ 
+        window.onkeydown = function (e) {
+            if (e.ctrlKey && e.keyCode == 83) {
+                console.log('尝试屏蔽ctrl+s');
+                e.preventDefault();
+                e.returnValue = false;
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 80) {
+                console.log('尝试屏蔽ctrl+p');
+                e.preventDefault();
+                e.returnValue = false;
+                return false;
+            }
+ 			if (e.ctrlKey && e.keyCode==85){
+				console.log('尝试屏蔽ctrl+u');
+                e.preventDefault();
+                e.returnValue = false;
+                return false;
+            }
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 123) {
+                console.log('尝试屏蔽F12');
+                e.returnValue = false;
+                return (false);
+            }
+        };
+
+	</script>
+</head>
+
+<body>
+<div id="outbox">
+  <div id="imgbox" data-depth="0.4"></div>
+  <div id="svgbox" data-depth="0.2"></div>
+  <div id="bigbox" data-depth="0.05">
+    <div id="inbox"> 
+      <!--字幕-->
+      <div id="box"></div>
+      <!--能量-->
+      <div id="blood"></div>
+      <!--地图-->
+      <div id="netmap">
+        <h3>Map</h3>
+        <hr align="center"/>
+        <script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=5zcnde40ovf&amp;m=0c&amp;c=007eff&amp;cr1=00fff6&amp;b=100&amp;lx=40&amp;ly=180&amp;hi=50&amp;he=7&amp;cw=ffffff&amp;cb=333333" async="async"></script></div>
+      <!--时钟-->
+      <div class="main">
+        <div id="canvas"></div>
+        <div id="time"></div>
+      </div>
+      <!--菜单-->
+      <div class="bg-nav"></div>
+      <div id="btn-nav-menu" class="show"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+      <nav id="nav-menu">
+        <ul>
+          <li class="nav-1"><a href="https://xx/" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i>Blog&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-2"><a href="https://xxx/" target="_blank"><i class="fa fa-inbox" aria-hidden="true"></i>NetDisk&nbsp;</a></li>
+          <li class="nav-3"><a href="https://xx/" target="_blank"><i class="fa fa-comments-o" aria-hidden="true"></i>Message</a></li>
+          <li class="nav-4"><a href="https://xx/" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i>About&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-5"><a><i class="fa fa-sign-out" aria-hidden="true"></i>Close&nbsp;&nbsp;&nbsp;</a></li>
+        </ul>
+      </nav>
+      <!--名片-->
+      <div id="btn-nav-info" class="show"><i class="fa fa-user" aria-hidden="true"></i></div>
+      <div id="nav-info">
+        <div id="nav-info-1">
+          <h3>Notice</h3>
+          <hr align="center"/>
+          <p>新主页完工~ OxO</p>
+        </div>
+        <div id="nav-info-2">
+          <p><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;2020.10.06.update</p>
+        </div>
+      </div>
+      <!--其他-->
+      <div id="btn-nav-set" class="show" onClick="alert('还没想好这个按钮要干啥...')"><i class="fa fa-cog" aria-hidden="true"></i></div>
+      <div id="nav-set"> </div>
+    </div>
+  </div>
+  
+  <!--主按钮-->
+  <div class="boton" data-depth="0.1"> <a href="https://xx/" target="_blank">
+    <svg viewBox="0 0 290 70" width="100%" heigth:"100%">
+      <line class="L-T"  x1="0" y1="-15" x2="0" y2="20"/>
+      <line class="L-B"  x1="0" y1="50" x2="0" y2="85"/>
+      <line class="R-T" x1="290" y1="-15" x2="290" y2="20"/>
+      <line class="R-B"  x1="290" y1="50" x2="290" y2="85"/>
+      <line class="T-L"  x1="-125" y1="0" x2="20" y2="0"/>
+      <line class="T-R"  x1="270" y1="0" x2="415" y2="0"/>
+      <line class="B-R"  x1="270" y1="70" x2="415" y2="70"/>
+      <line class="B-L"  x1="-125" y1="70" x2="20" y2="70"/>
+    </svg>
+    <p>View Blog</p>
+    </a> </div>
+</div>
+<!--live2d小人-->
+<div class="waifu">
+  <div class="waifu-tips"></div>
+  <canvas id="live2d" class="live2d" width="220" height="350"></canvas>
+</div>
+<footer>
+  <p>Copyright © 2020 肥虫汽水摊 | <a class="beiansr" href="https://beian.miit.gov.cn/"  target="_blank">闽ICP备00000000号-2</a> | <img src="img/beianico.png" width="15" height="15" alt=""/> <a class="beiansr" href="http://www.beian.gov.cn"  target="_blank">闽公网安备 00000000000000号</a> | <a  class="beiansr" style="width:46px;line-height:0" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="img/uplogo6.png" style="vertical-align:top" width="46" height="22.4" alt=""/></a>提供CDN加速 </p>
+</footer>
+</body>
+<script type="text/javascript">
+	loadlive2d("live2d", "model/bronya/model.json");
+		$(function() {
+			$(".waifu").draggable();
+  		});
+		//视差
+	var scene = $('#outbox').get(0);
+	var parallaxInstance = new Parallax(scene);
+	
+    //<!CDATA[
+        var bodyBgs = [];
+        bodyBgs[0] = "img/bg.jpg";
+        bodyBgs[1] = "img/bg1.jpg";
+        bodyBgs[2] = "img/bg2.jpg";
+        bodyBgs[3] = "img/bg3.jpg";
+        bodyBgs[4] = "img/bg4.jpg";
+		bodyBgs[5] = "img/bg5.jpg";
+		bodyBgs[6] = "img/bg6.jpg";
+		bodyBgs[7] = "img/bg7.jpg";
+		bodyBgs[8] = "img/bg8.jpg";
+        var randomBgIndex = Math.round( Math.random() * 8 );
+    //输出随机的背景图
+		$('#imgbox').css({"background-image": "url("+bodyBgs[randomBgIndex]+") "});
+    //]]>
+	
+	
+	// 取得浏览器的userAgent字符串
+    var userAgent = navigator.userAgent;
+    // 判断是否为小于IE11的浏览器
+    var isLessIE11 = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1;
+    // 判断是否为IE的Edge浏览器
+    var isEdge = userAgent.indexOf('Edge') > -1 && !isLessIE11;
+    // 判断是否为IE11浏览器
+    var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf('rv:11.0') > -1;
+
+    if (isLessIE11) {
+		console.log('duang~');
+	}else if(isEdge || isIE11){
+		zscreen();
+	}
+	else{
+		zparticle();
+		zscreen();
+		var link = new Link();
+		link.bars();
+	}
+	//------
+	$('#btn-nav-menu').on('click', function(){
+  $(this).toggleClass('open');
+  $('.bg-nav, #nav-menu, #nav-menu ul').toggleClass('show');
+	$('#btn-nav-info, #btn-nav-set, .boton').toggleClass('unshow');
+});
+
+$('li[class^="nav-"]').on('click', function(){
+  $('#btn-nav-menu').click();
+});
+	
+	$('#btn-nav-info').on('click', function(){
+  $(this).toggleClass('open');
+  $('.bg-nav, #nav-info').toggleClass('show');
+		$('#btn-nav-menu, #btn-nav-set, .boton').toggleClass('unshow');
+});
+	
+//	$('#btn-nav-set').on('click', function(){
+//  $(this).toggleClass('open');
+//  $('.bg-nav, #nav-set').toggleClass('show');
+//		$('#btn-nav-info, #btn-nav-menu, .boton').toggleClass('unshow');
+//});
+	
+    </script>
+</html>
